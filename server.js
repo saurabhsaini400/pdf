@@ -41,7 +41,7 @@ app.post("/merged-pdfs",upload.array('pdfinput',2), async (req,res)=>{
 });
 //.catch(err => console.log(err));
 
-app.listen(process.env.PORT || 5000, function(err){
+app.listen(1337, function(err){
     if(err){
         console.log(err);
     }
