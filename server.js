@@ -13,6 +13,7 @@ app.use(bodyParser.json()).use(bodyParser.urlencoded({ extended: true }));
 
 app.get("/merge-pdf", (req,res)=>{
     res.render("index");
+    res.json({message: "Hello this is Saurabh"})
 })
 
 app.post("/merged-pdfs",upload.array('pdfinput',2), async (req,res)=>{
